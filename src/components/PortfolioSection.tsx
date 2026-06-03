@@ -55,6 +55,22 @@ export default function PortfolioSection() {
         </div>
 
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="group rounded-2xl border border-white/8 bg-white/4 overflow-hidden transition-all duration-300 hover:border-white/20 hover:bg-white/8">
+            <div className="flex items-center justify-center bg-white p-6">
+              <img
+                src="https://cdn.poehali.dev/projects/e81b20dc-3c95-48ef-b77a-5cc885f0c8ea/bucket/725d070b-08ce-42bc-9d62-456962dd4d46.png"
+                alt="QR-код практической работы"
+                className="w-40 h-40 object-contain"
+              />
+            </div>
+            <div className="p-6">
+              <span className="inline-block rounded-full px-3 py-1 text-xs font-medium mb-4 bg-orange-900/60 text-orange-200">
+                Практическая работа
+              </span>
+              <h3 className="text-lg font-light text-white mb-3 leading-snug">Практическая работа №8</h3>
+              <p className="text-sm text-white/50 font-light leading-relaxed">Учебная практическая работа по программе ПОИО(б)-52. QR-код ведёт к материалам работы.</p>
+            </div>
+          </div>
           {works.map((work) => (
             <div
               key={work.title}
