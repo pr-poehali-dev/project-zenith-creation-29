@@ -1,0 +1,89 @@
+const works = [
+  {
+    title: 'Проект «Великая Отечественная»',
+    description: 'Исследовательская работа учеников 9 класса: сбор воспоминаний ветеранов, составление интерактивной карты боевых действий.',
+    tag: 'Проект учеников',
+  },
+  {
+    title: 'Урок-дебаты «Реформы Петра I»',
+    description: 'Авторская методика дебатов: ученики защищают противоположные точки зрения, опираясь на исторические источники.',
+    tag: 'Методическая разработка',
+  },
+  {
+    title: 'Музейная экспозиция «Быт XIX века»',
+    description: 'Совместный проект с городским музеем: ученики исследовали артефакты и составили описания экспонатов.',
+    tag: 'Совместный проект',
+  },
+  {
+    title: 'Олимпиада по истории — 1 место',
+    description: 'Подготовка победителей районной олимпиады по истории на протяжении трёх лет подряд.',
+    tag: 'Достижение',
+  },
+  {
+    title: 'Интерактивная хронология цивилизаций',
+    description: 'Авторский учебный плакат и цифровая версия хронологии от Древнего Египта до наших дней для уроков 5–6 классов.',
+    tag: 'Учебный материал',
+  },
+  {
+    title: 'Открытый урок «Революция 1917 года»',
+    description: 'Урок с элементами театральной реконструкции исторических событий. Отмечен на городском методическом конкурсе.',
+    tag: 'Открытый урок',
+  },
+];
+
+const tagColors: Record<string, string> = {
+  'Проект учеников': 'bg-amber-900/60 text-amber-200',
+  'Методическая разработка': 'bg-blue-900/60 text-blue-200',
+  'Совместный проект': 'bg-green-900/60 text-green-200',
+  'Достижение': 'bg-purple-900/60 text-purple-200',
+  'Учебный материал': 'bg-rose-900/60 text-rose-200',
+  'Открытый урок': 'bg-teal-900/60 text-teal-200',
+};
+
+export default function PortfolioSection() {
+  return (
+    <section className="bg-neutral-950 py-24 px-8 md:px-16">
+      <div className="container mx-auto">
+        <div className="mb-16">
+          <p className="text-xs uppercase tracking-widest text-white/40 mb-3">Портфолио</p>
+          <h2 className="text-3xl font-light text-white md:text-4xl">
+            Методические работы и проекты
+          </h2>
+          <p className="mt-4 max-w-xl text-white/50 text-base font-light">
+            Избранные разработки, проекты учеников и педагогические достижения за годы преподавания
+          </p>
+        </div>
+
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {works.map((work) => (
+            <div
+              key={work.title}
+              className="group rounded-2xl border border-white/8 bg-white/4 p-6 transition-all duration-300 hover:border-white/20 hover:bg-white/8"
+            >
+              <span className={`inline-block rounded-full px-3 py-1 text-xs font-medium mb-4 ${tagColors[work.tag]}`}>
+                {work.tag}
+              </span>
+              <h3 className="text-lg font-light text-white mb-3 leading-snug">{work.title}</h3>
+              <p className="text-sm text-white/50 font-light leading-relaxed">{work.description}</p>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-20 border-t border-white/10 pt-16 grid gap-8 sm:grid-cols-3 text-center">
+          <div>
+            <p className="text-4xl font-light text-white">15+</p>
+            <p className="mt-2 text-sm text-white/40 uppercase tracking-widest">Лет опыта</p>
+          </div>
+          <div>
+            <p className="text-4xl font-light text-white">300+</p>
+            <p className="mt-2 text-sm text-white/40 uppercase tracking-widest">Выпускников</p>
+          </div>
+          <div>
+            <p className="text-4xl font-light text-white">12</p>
+            <p className="mt-2 text-sm text-white/40 uppercase tracking-widest">Олимпиадных призёров</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
