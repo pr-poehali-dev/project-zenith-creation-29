@@ -71,6 +71,36 @@ export default function PortfolioSection() {
               <p className="text-sm text-white/50 font-light leading-relaxed">Учебная практическая работа по программе ПОИО(б)-52. QR-код ведёт к материалам работы.</p>
             </div>
           </div>
+
+          <div className="group rounded-2xl border border-white/8 bg-white/4 overflow-hidden transition-all duration-300 hover:border-white/20 hover:bg-white/8">
+            <img
+              src="https://cdn.poehali.dev/projects/e81b20dc-3c95-48ef-b77a-5cc885f0c8ea/bucket/229701c4-8492-4b34-aadc-376f889a2ead.jpg"
+              alt="Типы личности по MBTI"
+              className="w-full h-56 object-cover object-top"
+            />
+            <div className="p-6">
+              <span className="inline-block rounded-full px-3 py-1 text-xs font-medium mb-4 bg-teal-900/60 text-teal-200">
+                Учебный материал
+              </span>
+              <h3 className="text-lg font-light text-white mb-3 leading-snug">Типы личности по MBTI</h3>
+              <p className="text-sm text-white/50 font-light leading-relaxed">Инфографика с описанием типов личности по методике MBTI: INTJ, INFJ, ISTJ, ESTP, ENTP, ENFP. Используется как наглядное пособие на занятиях.</p>
+            </div>
+          </div>
+
+          <div className="group rounded-2xl border border-white/8 bg-white/4 overflow-hidden transition-all duration-300 hover:border-white/20 hover:bg-white/8">
+            <img
+              src="https://cdn.poehali.dev/projects/e81b20dc-3c95-48ef-b77a-5cc885f0c8ea/bucket/e7e478cc-28e8-4146-bd47-6ce1d01e3b39.png"
+              alt="Брошюра MBTI"
+              className="w-full h-56 object-cover object-top"
+            />
+            <div className="p-6">
+              <span className="inline-block rounded-full px-3 py-1 text-xs font-medium mb-4 bg-purple-900/60 text-purple-200">
+                Методическая разработка
+              </span>
+              <h3 className="text-lg font-light text-white mb-3 leading-snug">Брошюра «Найди свой тип личности»</h3>
+              <p className="text-sm text-white/50 font-light leading-relaxed">Авторская брошюра о методиках типирования личности: MBTI, Психософия, Эннеаграмма, Big Five, Соционика. Разработана для учебных занятий по психологии и самопознанию.</p>
+            </div>
+          </div>
           {works.map((work) => (
             <div
               key={work.title}
