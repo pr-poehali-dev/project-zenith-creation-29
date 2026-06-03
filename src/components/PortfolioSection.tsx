@@ -72,6 +72,71 @@ export default function PortfolioSection() {
             </div>
           </div>
 
+          <div className="group rounded-2xl border border-white/8 bg-white/4 overflow-hidden transition-all duration-300 hover:border-white/20 hover:bg-white/8 flex flex-col">
+            <div className="p-6 flex flex-col flex-1">
+              <span className="inline-block rounded-full px-3 py-1 text-xs font-medium mb-4 bg-blue-900/60 text-blue-200">
+                Интерактивное задание
+              </span>
+              <h3 className="text-lg font-light text-white mb-3 leading-snug">Интерактивное задание LearningApps</h3>
+              <p className="text-sm text-white/50 font-light leading-relaxed flex-1">Учебное интерактивное упражнение по истории, созданное на платформе LearningApps.</p>
+              <a href="https://learningapps.org/watch?v=pu6xa7vc326" target="_blank" rel="noopener noreferrer" className="mt-5 inline-block text-center rounded-lg border border-white/20 px-4 py-2 text-sm text-white/70 hover:border-white/50 hover:text-white transition-colors">
+                Открыть задание →
+              </a>
+            </div>
+          </div>
+
+          <div className="group rounded-2xl border border-white/8 bg-white/4 overflow-hidden transition-all duration-300 hover:border-white/20 hover:bg-white/8 flex flex-col">
+            <div className="p-6 flex flex-col flex-1">
+              <span className="inline-block rounded-full px-3 py-1 text-xs font-medium mb-4 bg-rose-900/60 text-rose-200">
+                Тест
+              </span>
+              <h3 className="text-lg font-light text-white mb-3 leading-snug">Тест по истории — Банк тестов</h3>
+              <p className="text-sm text-white/50 font-light leading-relaxed flex-1">Авторский тест по истории, опубликованный на платформе Банк тестов для проверки знаний учащихся.</p>
+              <a href="https://banktestov.ru/test/113680" target="_blank" rel="noopener noreferrer" className="mt-5 inline-block text-center rounded-lg border border-white/20 px-4 py-2 text-sm text-white/70 hover:border-white/50 hover:text-white transition-colors">
+                Открыть тест →
+              </a>
+            </div>
+          </div>
+
+          <div className="group rounded-2xl border border-white/8 bg-white/4 overflow-hidden transition-all duration-300 hover:border-white/20 hover:bg-white/8 flex flex-col">
+            <div className="p-6 flex flex-col flex-1">
+              <span className="inline-block rounded-full px-3 py-1 text-xs font-medium mb-4 bg-rose-900/60 text-rose-200">
+                Тест
+              </span>
+              <h3 className="text-lg font-light text-white mb-3 leading-snug">Тест — OnlineTestPad</h3>
+              <p className="text-sm text-white/50 font-light leading-relaxed flex-1">Интерактивный тест по истории на платформе OnlineTestPad для самопроверки и контроля знаний.</p>
+              <a href="https://onlinetestpad.com/iaudwabv2uyty" target="_blank" rel="noopener noreferrer" className="mt-5 inline-block text-center rounded-lg border border-white/20 px-4 py-2 text-sm text-white/70 hover:border-white/50 hover:text-white transition-colors">
+                Открыть тест →
+              </a>
+            </div>
+          </div>
+
+          <div className="group rounded-2xl border border-white/8 bg-white/4 overflow-hidden transition-all duration-300 hover:border-white/20 hover:bg-white/8 flex flex-col">
+            <div className="p-6 flex flex-col flex-1">
+              <span className="inline-block rounded-full px-3 py-1 text-xs font-medium mb-4 bg-amber-900/60 text-amber-200">
+                Форма опроса
+              </span>
+              <h3 className="text-lg font-light text-white mb-3 leading-snug">Форма — Яндекс Формы</h3>
+              <p className="text-sm text-white/50 font-light leading-relaxed flex-1">Авторская форма опроса или проверочное задание, созданное в сервисе Яндекс Формы.</p>
+              <a href="https://forms.yandex.ru/u/6a1bd07890fa7b214d835398" target="_blank" rel="noopener noreferrer" className="mt-5 inline-block text-center rounded-lg border border-white/20 px-4 py-2 text-sm text-white/70 hover:border-white/50 hover:text-white transition-colors">
+                Открыть форму →
+              </a>
+            </div>
+          </div>
+
+          <div className="group rounded-2xl border border-white/8 bg-white/4 overflow-hidden transition-all duration-300 hover:border-white/20 hover:bg-white/8 flex flex-col">
+            <div className="p-6 flex flex-col flex-1">
+              <span className="inline-block rounded-full px-3 py-1 text-xs font-medium mb-4 bg-green-900/60 text-green-200">
+                Учебное задание
+              </span>
+              <h3 className="text-lg font-light text-white mb-3 leading-snug">Задание — 1С:Урок</h3>
+              <p className="text-sm text-white/50 font-light leading-relaxed flex-1">Учебное задание по истории, опубликованное на образовательной платформе 1С:Урок.</p>
+              <a href="https://urok.1c.ru/share/task/eaa0723f5287d7ea25f8ebcc97c41557/" target="_blank" rel="noopener noreferrer" className="mt-5 inline-block text-center rounded-lg border border-white/20 px-4 py-2 text-sm text-white/70 hover:border-white/50 hover:text-white transition-colors">
+                Открыть задание →
+              </a>
+            </div>
+          </div>
+
           <div className="group rounded-2xl border border-white/8 bg-white/4 overflow-hidden transition-all duration-300 hover:border-white/20 hover:bg-white/8">
             <img
               src="https://cdn.poehali.dev/projects/e81b20dc-3c95-48ef-b77a-5cc885f0c8ea/bucket/229701c4-8492-4b34-aadc-376f889a2ead.jpg"
