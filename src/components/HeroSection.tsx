@@ -49,21 +49,6 @@ export default function HeroSection() {
             {/* Portrait */}
             <div
               className={cn(
-                'transform transition-all duration-1000 ease-out',
-                isLoaded ? 'translate-x-0 opacity-100' : '-translate-x-8 opacity-0'
-              )}
-            >
-              <div className="relative h-48 w-48 overflow-hidden rounded-full border-4 border-white shadow-2xl md:h-64 md:w-64">
-                <img
-                  src="/placeholder-user.jpg"
-                  alt="Педагог истории"
-                  className="h-full w-full object-cover"
-                />
-              </div>
-            </div>
-
-            <div
-              className={cn(
                 'transform transition-all duration-1000 delay-300 ease-out',
                 isLoaded ? 'translate-x-0 opacity-100' : '-translate-x-8 opacity-0'
               )}
